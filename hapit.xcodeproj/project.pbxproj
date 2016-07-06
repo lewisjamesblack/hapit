@@ -7,14 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		752274171D2AADBE00F72F3C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 752274161D2AADBE00F72F3C /* GoogleService-Info.plist */; };
+		7563334A1D2D0CB7004B5468 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756333491D2D0CB7004B5468 /* Constants.swift */; };
+		7563334C1D2D34EA004B5468 /* HabitsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7563334B1D2D34EA004B5468 /* HabitsVC.swift */; };
+		7572A9791D2BE3FA000FEAD5 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7572A9781D2BE3FA000FEAD5 /* DataService.swift */; };
 		75B326BD1D2AA8390043D593 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B326BC1D2AA8390043D593 /* AppDelegate.swift */; };
 		75B326BF1D2AA8390043D593 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B326BE1D2AA8390043D593 /* ViewController.swift */; };
 		75B326C21D2AA8390043D593 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75B326C01D2AA8390043D593 /* Main.storyboard */; };
 		75B326C41D2AA8390043D593 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75B326C31D2AA8390043D593 /* Assets.xcassets */; };
 		75B326C71D2AA8390043D593 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75B326C51D2AA8390043D593 /* LaunchScreen.storyboard */; };
+		C17CD19A8109E5FB842990A6 /* Pods_hapit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24F7EE36C03E2BDD18F57E56 /* Pods_hapit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F730C51F727A74BC418652E /* Pods-hapit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hapit.release.xcconfig"; path = "Pods/Target Support Files/Pods-hapit/Pods-hapit.release.xcconfig"; sourceTree = "<group>"; };
+		24F7EE36C03E2BDD18F57E56 /* Pods_hapit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hapit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		752274161D2AADBE00F72F3C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		756333491D2D0CB7004B5468 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		7563334B1D2D34EA004B5468 /* HabitsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HabitsVC.swift; sourceTree = "<group>"; };
+		7572A9781D2BE3FA000FEAD5 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		75B326B91D2AA8390043D593 /* hapit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hapit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75B326BC1D2AA8390043D593 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		75B326BE1D2AA8390043D593 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +33,7 @@
 		75B326C31D2AA8390043D593 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		75B326C61D2AA8390043D593 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		75B326C81D2AA8390043D593 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C84761045AA86445F417C438 /* Pods-hapit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hapit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-hapit/Pods-hapit.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +41,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C17CD19A8109E5FB842990A6 /* Pods_hapit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		02D5693B5B403736917D9EA0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C84761045AA86445F417C438 /* Pods-hapit.debug.xcconfig */,
+				0F730C51F727A74BC418652E /* Pods-hapit.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		1E0D15948667C560B65A1DA4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				24F7EE36C03E2BDD18F57E56 /* Pods_hapit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		75B326B01D2AA8390043D593 = {
 			isa = PBXGroup;
 			children = (
 				75B326BB1D2AA8390043D593 /* hapit */,
 				75B326BA1D2AA8390043D593 /* Products */,
+				02D5693B5B403736917D9EA0 /* Pods */,
+				1E0D15948667C560B65A1DA4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,10 +88,14 @@
 			children = (
 				75B326BC1D2AA8390043D593 /* AppDelegate.swift */,
 				75B326BE1D2AA8390043D593 /* ViewController.swift */,
+				756333491D2D0CB7004B5468 /* Constants.swift */,
 				75B326C01D2AA8390043D593 /* Main.storyboard */,
+				7563334B1D2D34EA004B5468 /* HabitsVC.swift */,
 				75B326C31D2AA8390043D593 /* Assets.xcassets */,
 				75B326C51D2AA8390043D593 /* LaunchScreen.storyboard */,
+				752274161D2AADBE00F72F3C /* GoogleService-Info.plist */,
 				75B326C81D2AA8390043D593 /* Info.plist */,
+				7572A9781D2BE3FA000FEAD5 /* DataService.swift */,
 			);
 			path = hapit;
 			sourceTree = "<group>";
@@ -71,9 +107,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 75B326CB1D2AA8390043D593 /* Build configuration list for PBXNativeTarget "hapit" */;
 			buildPhases = (
+				83155160B254A56EF58D842E /* [CP] Check Pods Manifest.lock */,
 				75B326B51D2AA8390043D593 /* Sources */,
 				75B326B61D2AA8390043D593 /* Frameworks */,
 				75B326B71D2AA8390043D593 /* Resources */,
+				2A962C55C71457C720F1F890 /* [CP] Embed Pods Frameworks */,
+				2BED0692F71258849C74FA42 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -123,6 +162,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				75B326C71D2AA8390043D593 /* LaunchScreen.storyboard in Resources */,
+				752274171D2AADBE00F72F3C /* GoogleService-Info.plist in Resources */,
 				75B326C41D2AA8390043D593 /* Assets.xcassets in Resources */,
 				75B326C21D2AA8390043D593 /* Main.storyboard in Resources */,
 			);
@@ -130,13 +170,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2A962C55C71457C720F1F890 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-hapit/Pods-hapit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2BED0692F71258849C74FA42 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-hapit/Pods-hapit-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		83155160B254A56EF58D842E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		75B326B51D2AA8390043D593 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				75B326BF1D2AA8390043D593 /* ViewController.swift in Sources */,
+				7563334C1D2D34EA004B5468 /* HabitsVC.swift in Sources */,
+				7572A9791D2BE3FA000FEAD5 /* DataService.swift in Sources */,
 				75B326BD1D2AA8390043D593 /* AppDelegate.swift in Sources */,
+				7563334A1D2D0CB7004B5468 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,23 +338,27 @@
 		};
 		75B326CC1D2AA8390043D593 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C84761045AA86445F417C438 /* Pods-hapit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = hapit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lewisblack.hapit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		75B326CD1D2AA8390043D593 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F730C51F727A74BC418652E /* Pods-hapit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = hapit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lewisblack.hapit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -286,6 +381,7 @@
 				75B326CD1D2AA8390043D593 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,13 +7,29 @@
 //
 
 import UIKit
+import Firebase
+
 
 class HabitsVC: UIViewController {
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        print (currentUser?.firstName)
+    
+        FIRAuth.auth()?.addAuthStateDidChangeListener{ auth,user in
+        
+        if user != nil {
+            print("user Signed In")
+            print(user!.displayName)
+            print(user!.email)
+        } else {
+            print("no user signed in")
+        }
+            
+        }
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -22,5 +38,6 @@ class HabitsVC: UIViewController {
     }
     
 
+   
 
 }
